@@ -1,19 +1,20 @@
+import * as pt from "pareto-core-types"
 
-export type Wrapping =
+export type TWrapping =
     | ["quote", {}]
     | ["apostrophe", {}]
     | ["none", {}]
 
-export type SimpleStringData = {
-    readonly "wrapping": Wrapping
+export type TSimpleStringData = {
+    readonly "wrapping": TWrapping
     readonly "value": string
 }
 
-export type MultilineStringData = {
-    readonly "lines": string[]
+export type TMultilineStringData = {
+    readonly "lines": pt.Array<string>
 }
 
-export type StructuralTokenType =
+export type TStructuralTokenType =
     | ["tagged union start", {}]
     | ["open shorthand group", {}]
     | ["close shorthand group", {}]
@@ -24,12 +25,12 @@ export type StructuralTokenType =
     | ["open list", {}]
     | ["close list", {}]
 
-export type StructuralTokenData = {
-    readonly "type": StructuralTokenType
+export type TStructuralTokenData = {
+    readonly "type": TStructuralTokenType
 }
 
-export type Token =
+export type TToken =
     | ["header start", {}]
-    | ["structural", StructuralTokenData]
-    | ["simple string", SimpleStringData]
-    | ["multiline string", MultilineStringData]
+    | ["structural", TStructuralTokenData]
+    | ["simple string", TSimpleStringData]
+    | ["multiline string", TMultilineStringData]
