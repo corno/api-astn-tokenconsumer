@@ -1,3 +1,3 @@
-export * from "./interfaces/ITokenConsumer"
-export * from "./types/Token"
-export * from "./types/AnnotatedToken"
+export * from "./interfaces/ITokenConsumer.p"
+export * from "./types/Token.p"
+export * from "./types/AnnotatedToken.p"

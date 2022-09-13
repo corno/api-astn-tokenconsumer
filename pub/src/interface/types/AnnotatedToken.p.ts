@@ -1,6 +1,6 @@
-import { TToken } from "./Token"
+import { TToken } from "./Token.p"
 
-export type TAnnotatedToken<Annotation> = {
+export type TAnnotatedToken<PAnnotation> = {
     readonly "token": TToken
-    readonly "annotation": Annotation
+    readonly "annotation": PAnnotation
 }

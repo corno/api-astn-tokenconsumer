@@ -1,6 +1,6 @@
-import { TAnnotatedToken } from "../types/AnnotatedToken"
+import { TAnnotatedToken } from "../types/AnnotatedToken.p"
 
-export type ITokenConsumer<Annotation> = {
-    readonly "onToken": ($: TAnnotatedToken<Annotation>) => void
-    readonly "onEnd": ($: Annotation) => void
+export type ITokenConsumer<PAnnotation> = {
+    readonly "onToken": ($: TAnnotatedToken<PAnnotation>) => void
+    readonly "onEnd": ($: PAnnotation) => void
 }
