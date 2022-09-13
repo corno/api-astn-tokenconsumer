@@ -21,8 +21,8 @@
   "types": "dist/index.d.ts",
   "version": "0.2.0",
   "dependencies": {
-    "pareto-core-types": "^0.2.0"
+    "pareto-core-types": "^0.6.0"
   },
   "interface-fingerprint": "561f7aeb896b3cd07aec4f9383a69073cb33619d",
-  "content-fingerprint": "88550a198e67c2262aea2920aa20c4f982735724"
+  "content-fingerprint": "39512e914046ed28953953c335ae9d48b4dcfd7f"
 }
