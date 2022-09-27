@@ -1,9 +1,9 @@
 import * as pt from "pareto-core-types"
 
 export type TWrapping =
-    | ["quote", {}]
-    | ["apostrophe", {}]
-    | ["none", {}]
+    | ["quote", null]
+    | ["apostrophe", null]
+    | ["none", null]
 
 export type TSimpleStringData = {
     readonly "wrapping": TWrapping
@@ -15,22 +15,22 @@ export type TMultilineStringData = {
 }
 
 export type TStructuralTokenType =
-    | ["tagged union start", {}]
-    | ["open shorthand group", {}]
-    | ["close shorthand group", {}]
-    | ["open verbose group", {}]
-    | ["close verbose group", {}]
-    | ["open dictionary", {}]
-    | ["close dictionary", {}]
-    | ["open list", {}]
-    | ["close list", {}]
+    | ["tagged union start", null]
+    | ["open shorthand group", null]
+    | ["close shorthand group", null]
+    | ["open verbose group", null]
+    | ["close verbose group", null]
+    | ["open dictionary", null]
+    | ["close dictionary", null]
+    | ["open list", null]
+    | ["close list", null]
 
 export type TStructuralTokenData = {
     readonly "type": TStructuralTokenType
 }
 
 export type TToken =
-    | ["header start", {}]
+    | ["header start", null]
     | ["structural", TStructuralTokenData]
     | ["simple string", TSimpleStringData]
     | ["multiline string", TMultilineStringData]
